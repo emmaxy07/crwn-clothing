@@ -1,7 +1,7 @@
 .collection-item {
-    width: 22vw;
     display: flex;
     flex-direction: column;
+    gap: 10px;
     height: 350px;
     align-items: center;
     position: relative;
@@ -10,9 +10,31 @@
       width: 100%;
       height: 95%;
       background-size: cover;
-      background-position: center;
       margin-bottom: 5px;
     }
+
+    @media only screen and(max-width: 600px) {
+      // .collection-item {
+        // width: 100%;
+        // border: 2px solid black;
+      // }
+      .image{
+        // width: 50%;
+        // background-size: cover;
+        // max-width: 100%!important;
+        // border: 4px solid red;
+      }
+    }
+
+    // @media only screen and(min-width: 600px)and(max-width: 800px) {
+    //   .image {
+    //     max-width: 170%;
+    //     width: 100%;
+    //     height: 95%;
+    //     margin: 0 auto;
+    //     background-size: cover;
+    //     }
+    // }
 
     .custom-button {
       width: 80%;
@@ -36,18 +58,23 @@
   
     .collection-footer {
       width: 100%;
-      height: 5%;
       display: flex;
+      align-items: center;
       justify-content: space-between;
       font-size: 18px;
   
       .name {
         width: 90%;
-        margin-bottom: 15px;
       }
   
       .price {
         width: 10%;
+      }
+
+      @media only screen and(max-width: 800px) {
+          .name{
+            margin-left: 5px;
+          }
       }
     }
   }

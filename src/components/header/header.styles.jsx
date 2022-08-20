@@ -4,23 +4,30 @@ import { Link } from "react-router-dom";
 export const HeaderContainer = styled.div`
     height: 70px;
     width: 100%;
+    font-weight: bold;
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
-    padding: 0 80px;
+    padding: 0;
 
-    @media screen and (max-width: 800px){
+    @media only screen and (max-width: 800px){
         height: 60px;
-        padding: 10px;
         margin-bottom: 20px;
-        padding: 5px;
+        padding-right: 10px;
+    }
+
+    @media only screen and (max-width: 600px){
+        height: 60px;
+        margin-bottom: 20px;
+        padding-right: 0;
     }
 `;
 
 export const LogoContainer = styled(Link)`
     height: 100%;
     width: 70px;
-    padding: 25px 0;
+    margin-bottom: 5px;
+    padding-top: 15px;
 
     @media screen and (max-width: 800px){
         width: 50px;
