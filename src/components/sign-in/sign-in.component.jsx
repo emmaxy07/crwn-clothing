@@ -33,9 +33,9 @@ class SignIn extends Component {
     }
 
     handleChange = e => {
-        const { value, name } = e.target
+        const { value, name } = e.target;
 
-        this.setState({[name]: value})
+        this.setState({ [name]: value });
     }
 
     render(){
@@ -50,7 +50,7 @@ class SignIn extends Component {
                     <FormInput name="password" type="password" label="password" value={this.state.password} handleChange={this.handleChange} required />
 
                     <div>
-                    <CustomButton type='submit'>Sign In</CustomButton>
+                    <CustomButton type='submit'>Sign In</CustomButton> <br/>
                     <CustomButton onClick={signInWithGoogle} isGoogleSignIn>{' '}Sign In With Google{' '}</CustomButton>
                     </div>
                 </form>
@@ -59,4 +59,4 @@ class SignIn extends Component {
     }
 }
 
-export default SignIn
+export default SignIn;

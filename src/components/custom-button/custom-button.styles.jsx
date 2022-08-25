@@ -57,6 +57,7 @@ export const CustomButtonContainer = styled.button`
     display: flex;
     justify-content: center;
     border-radius: 8px;
+    border: none;
   
     ${getButtonStyles}
 `;
