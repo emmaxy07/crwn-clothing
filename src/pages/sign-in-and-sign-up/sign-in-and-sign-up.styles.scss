@@ -7,10 +7,10 @@
 
     @media only screen and (max-width: 800px) {
         width: 100%;
+        flex-wrap: wrap;
     }
     
     @media only screen and (max-width: 600px) {
-        display: grid;
         gap: 5px;
         width: 100%;
     }

@@ -5,6 +5,8 @@
     height: 350px;
     align-items: center;
     position: relative;
+    width: 340px !important;
+
   
     .image {
       width: 100%;
@@ -56,7 +58,10 @@
           .name{
             margin-left: 5px;
           }
+          .collection-item{
+            width: 100%!important;
+          }
       }
     }
   }
-  
+

@@ -15,17 +15,25 @@
           }
         }
   
-    .preview {
-      display: flex;
-      justify-content: space-between;
-    }
-    
-         @media only screen and(max-width: 600px) {
-           .preview {
-             display: grid;
-             gap: 13px;
-             margin: 0 auto;
-           }
-         }
   }
+
+     .preview {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       gap: 10px;
+     }
+  
+     @media only screen and(max-width: 800px) {
+       .preview {
+         gap: 13px;
+         justify-content: stretch;
+       }
+     }
+  
+     @media only screen and(max-width: 600px) {
+       .preview {
+         display: grid;
+       }
+     }
   
